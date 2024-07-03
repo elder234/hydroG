@@ -1,5 +1,5 @@
-from pyrogram.handlers import MessageHandler
-from pyrogram.filters import command
+from hydrogram.handlers import MessageHandler
+from hydrogram.filters import command
 
 from bot import bot
 from bot.helper.mirror_leech_utils.upload_utils.gdriveTools import GoogleDriveHelper
