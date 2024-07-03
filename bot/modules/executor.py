@@ -1,5 +1,5 @@
-from pyrogram.handlers import MessageHandler, EditedMessageHandler
-from pyrogram.filters import command
+from hydrogram.handlers import MessageHandler, EditedMessageHandler
+from hydrogram.filters import command
 from os import getcwd, chdir, path
 from aiofiles import open as aiopen
 from traceback import format_exc
