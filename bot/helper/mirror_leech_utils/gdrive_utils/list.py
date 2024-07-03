@@ -1,5 +1,5 @@
-from pyrogram.handlers import MessageHandler, CallbackQueryHandler
-from pyrogram.filters import command, regex
+from hydrogram.handlers import MessageHandler, CallbackQueryHandler
+from hydrogram.filters import command, regex
 
 from bot import LOGGER, bot, config_dict
 from bot.helper.mirror_leech_utils.upload_utils.gdriveTools import GoogleDriveHelper
