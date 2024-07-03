@@ -1,5 +1,5 @@
-from pyrogram.handlers import MessageHandler, CallbackQueryHandler
-from pyrogram.filters import command, regex
+from hydrogram.handlers import MessageHandler, CallbackQueryHandler
+from hydrogram.filters import command, regex
 from html import escape
 from base64 import b64encode
 from re import match as re_match
