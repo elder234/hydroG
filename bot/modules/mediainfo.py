@@ -5,8 +5,8 @@ from aiofiles import open as aiopen
 from aiofiles.os import remove as aioremove, path as aiopath, mkdir
 from os import path as ospath, getcwd
 
-from pyrogram.handlers import MessageHandler
-from pyrogram.filters import command
+from hydrogram.handlers import MessageHandler
+from hydrogram.filters import command
 
 from bot import LOGGER, bot, config_dict
 from bot.helper.telegram_helper.filters import CustomFilters
