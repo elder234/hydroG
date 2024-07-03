@@ -1,5 +1,5 @@
-from pyrogram.handlers import CallbackQueryHandler
-from pyrogram.filters import command, regex
+from hydrogram.handlers import CallbackQueryHandler
+from hydrogram.filters import command, regex
 from aiofiles.os import remove as aioremove, path as aiopath
 
 from bot import bot, aria2, download_dict, download_dict_lock, OWNER_ID, user_data, LOGGER
