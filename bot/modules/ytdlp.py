@@ -1,5 +1,5 @@
-from pyrogram.handlers import MessageHandler, CallbackQueryHandler
-from pyrogram.filters import command, regex, user
+from hydrogram.handlers import MessageHandler, CallbackQueryHandler
+from hydrogram.filters import command, regex, user
 from asyncio import sleep, wait_for, Event, wrap_future
 from aiohttp import ClientSession
 from aiofiles.os import path as aiopath
