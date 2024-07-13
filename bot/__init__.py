@@ -61,7 +61,7 @@ qb_listener_lock = Lock()
 status_reply_dict = {}
 download_dict = {}
 
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 if len(BOT_TOKEN) == 0:
     error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
