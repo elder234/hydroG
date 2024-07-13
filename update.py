@@ -3,10 +3,7 @@ from subprocess import run
 from requests import get
 from dotenv import load_dotenv
 from pymongo import MongoClient
-from logging import FileHandler, StreamHandler, INFO, basicConfig, error, info, Formatter, ERROR, getLogger
-
-getLogger("pymongo").setLevel(ERROR)
-getLogger("httpx").setLevel(ERROR)
+from logging import FileHandler, StreamHandler, INFO, basicConfig, error, info, Formatter
 
 if path.exists('log.txt'):
     with open('log.txt', 'r+') as f:
@@ -14,7 +11,7 @@ if path.exists('log.txt'):
 
 class CustomFormatter(Formatter):
     def format(self, record):
-        return super().format(record).replace(record.levelname, record.levelname[:1])
+        return super().format(record).replace(record.levelname, record.levelname[:4])
 
 formatter = CustomFormatter("[%(asctime)s] [%(levelname)s] - %(message)s", datefmt="%d-%b-%y %I:%M:%S %p")
 
